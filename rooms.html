@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anaru Hudson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rooms</title>
+
+    <!--CSS and Font-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!--Javascript files-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/showRooms.js"></script>
+</head>
+<body>
+<!--Navigation-->
+<header>
+    <nav>
+        <a href="admin.html">Admin</a>
+        <a href="bookings.html">Bookings</a>
+        <a href="#">Rooms</a>
+        <a href="index.html" class="showHide">Book Now</a>
+    </nav>
+</header>
+<!--Main-->
+<main>
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-12">
+                <!--<h1>All Rooms</h1>-->
+                <table id="room-type-all">
+                    <caption>Types</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Beds</th>
+                        <th scope="col">Guests</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table id="rooms-all">
+                    <caption>Rooms</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Detail</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<!--Footer-->
+<footer>
+    <p>COSC212 Anaru Hudson 6684480</p>
+</footer>
+</body>
+</html>

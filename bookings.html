@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Anaru Hudson">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookings</title>
+
+    <!--CSS and Font-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!--Javascript Files-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/cookie.js"></script>
+    <script src="js/showBookings.js"></script>
+</head>
+<body>
+<!--Navigation-->
+<header>
+    <nav>
+        <a href="admin.html">Admin</a>
+        <a href="#">Bookings</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="index.html" class="showHide">Book Now</a>
+    </nav>
+</header>
+
+<main>
+    <div id="wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h1>All Bookings</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12" id="show-bookings">
+                <table id="bookings">
+                    <caption>Booking Summary</caption>
+                    <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">In</th>
+                        <th scope="col">Out</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</main>
+<!--Footer-->
+<footer>
+    <p>COSC212 Anaru Hudson 6684480</p>
+</footer>
+</body>
+</html>
