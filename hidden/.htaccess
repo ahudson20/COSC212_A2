@@ -1,0 +1,5 @@
+deny from all
+#<LimitExcept GET POST>
+#    Order Deny,Allow
+#    Deny from all
+#</LimitExcept>

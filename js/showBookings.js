@@ -26,9 +26,12 @@ var ShowBookings = (function () {
         var cart = Cookie.get("mybookings");
         var element = $("#bookings tbody");
 
-        if (cart) {
+        if (cart && cart.length > 2) {
             cart = JSON.parse(cart);
             element.append(generateHTML(cart));
+        } else if (cart.length === 2) {
+            $("#bookings").hide();
+            $("#show-bookings").append("<p>You have made no bookings!</p>");
         } else {
             $("#bookings").hide();
             $("#show-bookings").append("<p>You have made no bookings!</p>");

@@ -1,30 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Anaru Hudson">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Rooms</title>
+<?php
+$scriptList = array('js/jquery-3.3.1.min.js', 'js/showRooms.js');
+$currentPage = basename($_SERVER['PHP_SELF']);
+include('hidden/header.php');
+?>
 
-    <!--CSS and Font-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-    <!--Javascript files-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/showRooms.js"></script>
-</head>
-<body>
-<!--Navigation-->
-<header>
-    <nav>
-        <a href="admin.html">Admin</a>
-        <a href="bookings.html">Bookings</a>
-        <a href="#">Rooms</a>
-        <a href="index.html" class="showHide">Book Now</a>
-    </nav>
-</header>
 <!--Main-->
 <main>
     <div id="wrapper">
@@ -46,6 +28,7 @@
                 </table>
             </div>
         </div>
+        <!--Displays all rooms-->
         <div class="row">
             <div class="col-12">
                 <table id="rooms-all">
@@ -66,8 +49,6 @@
     </div>
 </main>
 <!--Footer-->
-<footer>
-    <p>COSC212 Anaru Hudson 6684480</p>
-</footer>
+<?php include("hidden/footer.php"); ?>
 </body>
 </html>

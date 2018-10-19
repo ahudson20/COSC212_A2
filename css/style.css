@@ -22,7 +22,7 @@ header{
     height: 12vh;
 }
 
-h1{
+h1, h3{
     text-align: center;
 }
 
@@ -68,7 +68,7 @@ footer p{
 }
 .col-6 {
     width: 50%;
-    margin-left: 25%;
+    /*margin-left: 25%;*/
 }
 .col-7 {
     width: 58.33%;
@@ -206,11 +206,23 @@ tbody {
         overflow-y: auto;
         overflow-x: hidden;
     }
+
+    #admin-table{
+        height: 25rem !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 }
 
 @media only screen and (max-height: 900px) {
     tbody{
         height: 25rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #admin-table{
+        height: 20rem !important;
         overflow-y: auto;
         overflow-x: hidden;
     }
@@ -231,6 +243,12 @@ tbody {
         overflow-x: hidden;
     }
 
+    #admin-table{
+        height: 15rem !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
     #room-type-all tbody, #rooms-all tbody{
         height: 10rem !important;
     }
@@ -247,6 +265,12 @@ tbody {
         overflow-x: hidden;
     }
 
+    #admin-table{
+        height: 10rem !important;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
     #room-type-all tbody, #rooms-all tbody{
         height: 8rem !important;
     }
@@ -259,6 +283,12 @@ tbody {
 
     tbody{
         height: 10rem;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    #admin-table{
+        height: 5rem !important;
         overflow-y: auto;
         overflow-x: hidden;
     }
@@ -386,7 +416,7 @@ input[type=date]::-webkit-outer-spin-button {
 }
 
 #errors{
-    margin-left: 20%;
+    margin-left: 22%;
     margin-top: 3rem;
     width: 60%;
     text-align: center;
@@ -481,4 +511,70 @@ input[type=date]::-webkit-outer-spin-button {
 
 #show-bookings p{
     text-align: center;
+}
+
+.submit{
+    margin: auto;
+    display: block;
+}
+
+input[type=submit]{
+    /*display: inline-block;*/
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: #0b98de;
+}
+
+input[type=submit]:hover{
+    color: inherit;
+    background-color: #17b0cf;
+}
+
+#admin-header{
+    padding-bottom: 0;
+}
+
+.admin-forms{
+    padding-bottom:0;
+    padding-top: 0;
+}
+
+.error-ul{
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+.error-ul li{
+    margin: 1rem;
+}
+
+.added-room-table{
+    height: 2.75rem !important;
+}
+
+#edit-room-header{
+    padding-bottom: 0;
+}
+
+#h-no-bookings p{
+    text-align: center;
+}
+
+#delete-warning{
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    background-color: inherit;
+}
+
+.admin-success-delete{
+    text-align: center;
+}
+
+.return-admin-button{
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-size: 1.2rem;
 }

@@ -67,7 +67,7 @@ var BookRoom = (function () {
      * @returns {Array} the array of all rooms that is returned from the callback function returnAllRooms.
      */
     function allRooms(callback) {
-        var xmlSource = "xml/hotelRooms.xml";
+        var xmlSource = "hidden/xml/hotelRooms.xml";
         var rooms = [];
         //var xmlSource = "";
         //var roomList = [];
@@ -93,7 +93,7 @@ var BookRoom = (function () {
      * @returns {Array}
      */
     function allBooked(callback) {
-        var xmlSource = "xml/roomBookings.xml";
+        var xmlSource = "hidden/xml/roomBookings.xml";
         //var xmlSource = "";
         //var bookedList = [];
         var rooms = [];
@@ -194,6 +194,15 @@ var BookRoom = (function () {
             $("#success-modal").show(300);
             $("#modal-form").show();
             $("#success-message").empty().hide();
+            //console.log($(this).parents("tr").find().text());
+            //$(this).parents('tr').find('td:nth-child(0)').css('color','red');
+
+            //console.log($("td:eq()").text());
+            //console.log($(this).parent().siblings().find("td:eq(0)").text());
+            //console.log($(this).parent().siblings("#room-num-dom").text());
+            var a = $(this).parent().siblings("#room-num-dom").text();
+            //console.log(a);
+            $("#num").val(a);
         });
 
         $(".close-modal").click(function () {

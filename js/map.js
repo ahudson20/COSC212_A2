@@ -12,7 +12,7 @@ var Map = (function () {
 
     /**
      * If the map is currently not visible, it shows the map while hiding
-     * the other two divs also in index.html.
+     * the other two divs also in index.php.
      * It then calls reSize, which forces the map to re-size according to #map div its displayed in.
      *
      * Otherwise, it shows the search for rooms form, hides the other two divs, and chenges the text

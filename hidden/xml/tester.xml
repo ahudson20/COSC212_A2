@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<bookings>
+
+<booking>
+    <number>101</number>
+    <name>henlo</name>
+    <checkin>
+        <day>29</day>
+        <month>09</month>
+        <year>2018</year>
+    </checkin>
+    <checkout>
+        <day>30</day>
+        <month>09</month>
+        <year>2018</year>
+    </checkout>
+</booking>
+
+</bookings>

@@ -20,14 +20,13 @@ var Bookings = (function () {
 
         booking = {};
         booking.bookedName = $("#name").val();
-        booking.bookedNum = $("#button-dom").parent().siblings("#room-num-dom").text();
-
+        booking.bookedNum = $("#num").val();
 
         var i = $("#indate").val().split("-");
         var o = $("#outdate").val().split("-");
 
-        booking.bookedInDate = i[1] + "/" + i[2] + "/" + i[0];
-        booking.bookedOutDate = o[1] + "/" + o[2] + "/" + o[0];
+        booking.bookedInDate = i[2] + "/" + i[1] + "/" + i[0];
+        booking.bookedOutDate = o[2] + "/" + o[1] + "/" + o[0];
         cart.push(booking);
 
         Cookie.set("mybookings", JSON.stringify(cart));

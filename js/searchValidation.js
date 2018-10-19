@@ -204,8 +204,9 @@ var Validation = (function () {
                 //BookRoom.setup.call(this);
                 $("#modal-errors").empty().hide();
                 $("#modal-form").hide();
-                $("#success-message").append("<p>Success! Your Booking has been confirmed!</p>").show();
+                //$("#success-message").append("<p>Success! Your Booking has been confirmed!</p>").show();
                 Bookings.setup.call(this);
+                TestingAjax.setup.call(this);
             }
         });
     };

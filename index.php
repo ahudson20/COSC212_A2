@@ -1,39 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <title>Hotel Galley</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="Anaru Hudson">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<?php
+session_start();
 
-    <!--CSS and Font-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+$scriptList = array('js/jquery-3.3.1.min.js', 'js/cookie.js', 'js/bookRoom.js', 'js/bookings.js', 'js/searchValidation.js', 'js/map.js', 'leaflet/leaflet.js', 'js/testingAjax.js');
+$currentPage = basename($_SERVER['PHP_SELF']);
+include('hidden/header.php');
+?>
 
-    <!--Javascript Files-->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/cookie.js"></script>
-    <script src="js/bookRoom.js"></script>
-    <script src="js/bookings.js"></script>
-    <script src="js/searchValidation.js"></script>
-
-    <!--Leaflet Map-->
-    <link rel="stylesheet" href="leaflet/leaflet.css"/>
-    <script src="leaflet/leaflet.js"></script>
-    <script src="js/map.js"></script>
-
-</head>
-<body>
-<!--Navigation-->
-<header>
-    <nav>
-        <a href="admin.html">Admin</a>
-        <a href="bookings.html">Bookings</a>
-        <a href="rooms.html">Rooms</a>
-        <a href="#" class="showHide" id="showHide">Find Us</a>
-    </nav>
-</header>
 <!--Main-->
 <main>
     <div id="wrapper">
@@ -58,7 +33,7 @@
                         <input type="date" name="outdate" id="outdate" class="input">
 
 
-                        <input type="button" value="Search" id="button-search" class="input">
+                        <input type="button" value="Search" id="button-search" name="search-button" class="input">
 
                     </form>
                     <div id="errors"></div>
@@ -86,7 +61,8 @@
                             <form id="modal-form">
                                 <label for="name" class="label">Name</label>
                                 <input type="text" name="name" id="name" class="input">
-                                <input type="button" value="Confirm" id="name-button" class="input">
+                                <input type="hidden" name="num" id="num" value="">
+                                <input type="button" value="Confirm" id="name-button" name="name-button" class="input">
                             </form>
                             <div id="success-message"></div>
                             <div id="modal-errors"></div>
@@ -99,8 +75,7 @@
     </div>
 </main>
 <!--Footer-->
-<footer>
-    <p>COSC212 Anaru Hudson 6684480</p>
-</footer>
+<?php include("hidden/footer.php"); ?>
+
 </body>
 </html>

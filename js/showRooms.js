@@ -48,7 +48,7 @@ var ShowRooms = (function () {
      */
     function showRooms() {
         var target = $("#rooms-all tbody");
-        var xmlSource = "xml/hotelRooms.xml";
+        var xmlSource = "hidden/xml/hotelRooms.xml";
         $.ajax({
             type: "GET",
             url: xmlSource,
@@ -76,7 +76,7 @@ var ShowRooms = (function () {
      */
     function showTypes() {
         var target = $("#room-type-all tbody");
-        var xmlSource = "xml/roomTypes.xml";
+        var xmlSource = "hidden/xml/roomTypes.xml";
         $.ajax({
             type: "GET",
             url: xmlSource,
